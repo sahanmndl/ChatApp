@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/extra_light_gray"
+    tools:context=".ChatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/chat_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/chat_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bright_blue"
+            android:elevation="4dp"
+            style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle"
+            tools:targetApi="lollipop">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_profileImage"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                app:civ_border_width="0.5dp"
+                app:civ_border_color="@color/bluish_grey"
+                android:src="@drawable/user"/>
+
+            <TextView
+                android:id="@+id/chat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:text="@string/dots"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/sf_medium"/>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_appBarLayout"
+        android:layout_above="@id/chat_bottomBarLayout"/>
+
+    <RelativeLayout
+        android:id="@+id/chat_bottomBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:layout_alignParentBottom="true"
+        tools:targetApi="lollipop">
+
+        <EditText
+            android:id="@+id/chat_textBar"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_toLeftOf="@id/chat_btnSend"
+            android:layout_toStartOf="@id/chat_btnSend"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_layout1"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:hint="@string/type_a_message"
+            android:layout_marginEnd="5dp"
+            android:textSize="17sp"/>
+
+        <ImageButton
+            android:id="@+id/chat_btnSend"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:elevation="4dp"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:src="@drawable/ic_send_vector"
+            tools:targetApi="lollipop" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

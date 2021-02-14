@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:elevation="4dp"
+    android:layout_marginTop="0.5dp"
+    tools:ignore="UnusedAttribute">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/itUser_profileImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        app:civ_border_color="@color/bluish_grey"
+        app:civ_border_width="0.5dp"
+        android:src="@drawable/user"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/itUser_profileImage"
+        android:layout_toEndOf="@id/itUser_profileImage"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp">
+
+        <TextView
+            android:id="@+id/itUser_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dots"
+            android:textSize="18sp"
+            android:textColor="@color/blackish"
+            android:fontFamily="@font/sf_medium"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/dotSep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dot"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:textSize="18sp"
+            android:textColor="@color/bluish_grey"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp" />
+
+        <TextView
+            android:id="@+id/itUser_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dots"
+            android:textSize="18sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/sf_medium"
+            android:includeFontPadding="false"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/itUser_statusDotOn"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_dot_on_vector"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:elevation="4dp"
+        tools:targetApi="lollipop"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/itUser_statusDotOff"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_dot_off_vector"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:elevation="4dp"
+        tools:targetApi="lollipop"
+        android:visibility="gone"/>
+
+</RelativeLayout>

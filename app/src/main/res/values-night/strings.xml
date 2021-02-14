@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="set_username">Set Username</string>
+    <string name="set_password">Set Password</string>
+    <string name="register">REGISTER</string>
+    <string name="already_have_an_account_login_then">Already have an account? Login then!</string>
+    <string name="create_a_new_account">Create A New Account</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_click_here">Don\'t have an account? Click Here!</string>
+    <string name="click_here_to_create_a_new_account">Click here to create a new account</string>
+    <string name="login">LOGIN</string>
+    <string name="new_to_flingg_click_here_to_register">New to Flingg? Click here to register!</string>
+    <string name="a_one_to_one_chat_application">A ONE-TO-ONE CHAT APPLICATION</string>
+    <string name="flingg">Flingg</string>
+    <string name="type_a_message">Type a message…</string>
+    <string name="dots">…</string>
+    <string name="logout">Logout</string>
+    <string name="my_profile">My Profile</string>
+    <string name="search">Search…</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_your_password">Reset Your Password</string>
+    <string name="reset">Reset</string>
+    <string name="after_clicking_the_above_button_a_link_to_reset_your_password_will_be_sent_to_the_entered_email">After clicking the above button, a link to reset your password will be sent to the entered email</string>
+    <string name="loading">Loading…</string>
+    <string name="dot">•</string>
+    <string name="after_clicking_the_register_button_a_verification_link_will_be_sent_to_your_email_address">After clicking the Register button, a verification link will be sent to your email address</string>
+    <string name="already_have_an_account_click_here_to_login">Already have an account? Click here to Login!</string>
+    <string name="username">Username</string>
+    <string name="version">v1.0</string>
+</resources>

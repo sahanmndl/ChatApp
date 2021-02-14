@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp">
+
+        <ImageView
+            android:id="@+id/start_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/layout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/whitish"
+        android:text="LOGIN"
+        android:fontFamily="@font/sf_medium"
+        android:textColor="@color/bright_blue"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        app:elevation="4dp"
+        tools:targetApi="lollipop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/whitish"
+        android:text="@string/create_a_new_account"
+        android:textColor="@color/bright_blue"
+        android:textStyle="bold"
+        android:fontFamily="@font/sf_medium"
+        android:includeFontPadding="false"
+        app:elevation="4dp"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/version"
+        android:textColor="@color/bluish_grey"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:fontFamily="@font/sf_medium"
+        android:includeFontPadding="false"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386295297126",
+    "project_id": "flingg-4538d",
+    "storage_bucket": "flingg-4538d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386295297126:android:b79c3a913e6a52ca9029a7",
+        "android_client_info": {
+          "package_name": "com.smproductions.flingg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386295297126-0eqtu8t03330ol25o5ribv8sg27pru7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdl9-RzovezWWWCp_V1J5Sm7TpzLLCeuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386295297126-0eqtu8t03330ol25o5ribv8sg27pru7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
